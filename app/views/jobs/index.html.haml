@@ -1,0 +1,13 @@
+#jobs
+  - @jobs.each do |job|
+    .job
+      %h2= link_to job.title, job
+      %p= job.company
+      %p
+        Salary:  
+        =job.salary
+        $
+      / %p #{raw(job.description[0..200] + '...')}
+      %p #{ActionView::Base.full_sanitizer.sanitize(job.description)[0..200] + "..."}
+#paginator.text-center
+  = paginate @jobs

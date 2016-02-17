@@ -1,0 +1,138 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootsy";
+
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+  /*background: -webkit-linear-gradient(left, #1D976C 10%, #93F9B9 90%);*/
+  /*background: -o-linear-gradient(left, #1D976C 10%, #93F9B9 90%);*/
+  /*background: linear-gradient(to right, #1D976C 10%, #93F9B9 90%);*/
+  	font-family: 'Lato', sans-serif;
+  	background-color: rgb(241,241,241);
+}	
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.navbar-inverse {
+	/*background-color: white;*/
+	border-radius: 0;
+	height: 80px;
+	padding: 15px 0;
+	border: none;
+	/*color: white !important;*/
+	a{
+		color: white;
+	}
+
+	.navbar-right{
+		a{
+			color: white !important;
+		}
+	}
+}
+
+.navbar-brand {
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-size: 2em;
+	font-weight: 300;
+	/*color: #1D976C !important;*/
+	a{
+		text-decoration: none;
+	}
+	a:hover{
+		background-color: none;
+	}
+}
+
+#jobs {
+	.job {
+		padding: 1em 0;
+		border-bottom: 1px solid rgba(114,114,114, 0.5);
+		h2 {
+			font-size: 2.5em;
+			font-weight: 300;
+			margin-bottom: 0;
+			/*color: white;*/
+			a {
+				text-decoration: none;
+			}
+			a:hover {
+				background-color: none;
+			}
+		}
+		p {
+			/*color: rgba(114,114,114, 0.5);*/
+		}
+	}
+}
+
+#links {
+	margin: 30px auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Custom CSS for Text Editor*/
+.wysihtml5-sandbox {
+	height: 300px !important;
+}
+
+#paginator {
+	margin: 30px auto;
+}
+
+
+.bs-docs-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #99979c;
+    text-align: center;
+    background-color: #2a2730;
+    a {
+    	color: white;
+    }
+}
+
+.bs-docs-footer-links {
+    padding-left: 0;
+    margin-bottom: 20px;
+    li {
+    	display: inline-block;
+    	padding-right: 20px;
+    }
+}
